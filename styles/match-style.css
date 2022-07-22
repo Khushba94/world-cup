@@ -2,79 +2,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /* common styles */
-* {
-  margin: 0;
-}
 body {
   font-family: "Poppins", sans-serif;
   display: flex;
-  justify-content: center;
-  /* flex-direction: column; */
-  /* align-items: center; */
+  flex-direction: column;
+  align-items: center;
 }
 
 /* header style */
 .header-info {
-  /* width: 1321px; */
-  width: 70%;
-  height: 100%;
+  width: 1321px;
+  height: 646px;
   background: #161616;
-  border-radius: 2rem;
+  border-radius: 30px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 3rem;
-  /* padding-left: 2rem; */
-  /* margin: 50px 140px 130px 140px; */
+  margin: 50px 140px 130px 140px;
 }
 /* header content style */
 .header-content {
-  width: 45%;
   border: 1px dotted orange;
-  padding: 1rem;
-  margin-left: 2.5rem;
-  /* margin: 111px 24px 111px 106px; */
+  margin: 111px 24px 111px 106px;
 }
 .header-title {
   color: white;
-  font-size: 3.75rem;
+  font-size: 60px;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 0.3125rem;
-  line-height: 5rem;
+  margin-bottom: 5px;
 }
 .header-description {
   color: white;
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  line-height: 1.5rem;
+  font-size: 16px;
 }
 .watch-live-btn {
   background: #dd0000;
-  border-radius: 0.3125rem;
-  padding: 1rem 1.625rem;
+  border-radius: 5px;
+  padding: 16px 26px;
 }
 .watch-live-btn a,
 .fa-greater-than {
   color: #ffffff;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 20px;
 }
 .watch-live-btn a {
-  margin-right: 0.625rem;
+  margin-right: 10px;
 }
 /* header image style */
 .header-img {
-  width: 55%;
   border: 1px dotted orange;
-  margin: 2rem 2.5rem 0 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 33px 79px 0 0;
 }
 .header-img img {
-  width: 100%;
-  height: auto;
+  width: 581px;
+  height: 613px;
 }
 
 /* body section style */
@@ -109,12 +90,12 @@ body {
   color: white;
 }
 
-/* #upcoming-match:active,
+#upcoming-match:active,
 #all-group:active,
 #blog-btn:active {
   background-color: #dd0000;
   color: white;
-} */
+}
 .section-btn a {
   font-size: 20px;
   color: #161616;
@@ -130,14 +111,26 @@ body {
 }
 .blog {
   width: 312px;
-  height: 362px;
+  height: 242px;
   border: 1px solid lightgray;
   border-radius: 10px;
 }
+.thumbnail {
+  display: flex;
+  justify-content: center;
+}
 .thumbnail img {
-  width: 312px;
-  height: 175px;
-  border-radius: 10px 10px 0px 0px;
+  width: 93px;
+  height: 56px;
+}
+.img-container {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 20px;
+}
+.thumbnail {
+  margin-top: 53px;
 }
 .transfer-btn {
   width: 100px;
@@ -151,14 +144,16 @@ body {
   padding: 4px;
 }
 .blog-title {
+  text-align: center;
   font-size: 18px;
   font-weight: 600;
-  margin: 0 20px;
+  margin: 20px 20px 10px 20px;
 }
 .blog-info {
-  display: flex;
-  gap: 30px;
-  margin: 20px 0 20px 20px;
+  color: #4d4d4d;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 73px;
 }
 
 /* footer style */
@@ -204,85 +199,4 @@ hr {
 .fa-linkedin {
   background-color: orange;
   font-size: 2em;
-}
-
-/* mobile view responsiveness */
-@media only screen and (max-width: 688px) {
-  /* .blogs,
-  .footer-container,
-  .header-content {
-    max-width: 100%;
-  } */
-  .header-info {
-    width: 90%;
-    flex-direction: column;
-    margin-top: 1.5rem;
-  }
-  .header-title {
-    font-size: 1.375rem;
-    line-height: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  .header-description {
-    word-wrap: break-word;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-height: 3.6em;
-    line-height: 1.8em;
-    /* 
-    height: 4.125rem;
-    overflow: hidden;
-    text-overflow: ellipsis; */
-  }
-  .header-content {
-    text-align: center;
-    width: 90%;
-  }
-  .header-img {
-    width: 90%;
-    margin-right: 0;
-    display: flex;
-    justify-content: center;
-  }
-}
-
-/* tab view responsiveness */
-@media only screen and (min-width: 689px) and (max-width: 992px) {
-  /* .blogs,
-  .footer-container,
-  .header-content {
-    max-width: 100%;
-  } */
-  .header-info {
-    width: 90%;
-    margin-top: 2rem;
-  }
-  .header-title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    line-height: 3rem;
-  }
-  .header-description {
-    word-wrap: break-word;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-height: 3.6em;
-    line-height: 1.8em;
-    /* 
-    height: 4.125rem;
-    overflow: hidden;
-    text-overflow: ellipsis; */
-  }
-  .header-content {
-    /* text-align: center; */
-    width: 90%;
-    margin: 0 0.5rem 0 4rem;
-    padding: 1rem 0 1rem 0;
-  }
-  .header-img {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0;
-  }
 }
