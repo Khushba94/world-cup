@@ -26,7 +26,6 @@ body {
 /* header content style */
 .header-content {
   width: 45%;
-  border: 1px dotted orange;
   padding: 1rem 0;
   margin-left: 2.5rem;
 }
@@ -37,6 +36,7 @@ body {
   margin-top: 0;
   margin-bottom: 0.3125rem;
   line-height: 5rem;
+  animation: header-title-animation 4s ease-in-out 1s infinite;
 }
 .header-description {
   color: white;
@@ -61,46 +61,46 @@ body {
 /* header image style */
 .header-img {
   width: 55%;
-  border: 1px dotted orange;
   margin: 2rem 2.5rem 0 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  /* animation */
-  /* position: relative;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: infinite; */
+  /* animation style */
+  position: relative;
+  animation: header-img-animation 4s ease-in-out 1s 1;
+  transform: rotate(30deg);
 }
 
-/* @keyframes example {
+/* animation style */
+@keyframes header-title-animation {
   0% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
+    color: rgb(204, 196, 239);
   }
   25% {
-    background-color: yellow;
-    left: 200px;
-    top: 0px;
+    color: rgb(240, 240, 201);
   }
   50% {
-    background-color: blue;
-    left: 200px;
-    top: 200px;
+    color: rgb(194, 227, 194);
   }
   75% {
-    background-color: green;
-    left: 0px;
-    top: 200px;
+    color: rgb(241, 154, 111);
   }
   100% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
+    color: rgb(225, 195, 231);
   }
-} */
+}
+
+@keyframes header-img-animation {
+  0% {
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    left: 40px;
+    top: 50px;
+    transform: rotate(20deg);
+  }
+}
 .header-img img {
   width: 100%;
   height: auto;
@@ -289,12 +289,23 @@ hr {
     line-height: 1.8em;
   }
   .header-img {
-    width: 90%;
+    width: 70%;
     margin-right: 0;
     display: flex;
     justify-content: center;
   }
 
+  /* animation style */
+  @keyframes header-img-animation {
+    0% {
+      width: 40%;
+      height: auto;
+      border-radius: 50%;
+      left: 95px;
+      top: 10px;
+      transform: rotate(10deg);
+    }
+  }
   /* body section style */
   main {
     width: 90%;
