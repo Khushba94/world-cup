@@ -12,40 +12,39 @@
     <link rel="stylesheet" href="styles/match-style.css" />
   </head>
   <body>
-    <header>
-      <!-- header starts here -->
-      <div class="header-info">
-        <div class="header-content">
-          <h1 class="header-title">The Greatest show on the earth</h1>
-          <p class="header-description">
-            Contrary to popular belief, Lorem Ipsum is not simply random text.It
-            has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old.
-          </p>
-          <button class="watch-live-btn">
-            <a href="">Watch Live </a>
-            <i class="fa-light fa-greater-than"></i>
-          </button>
-        </div>
-        <div class="header-img">
-          <img src="assets/Banner Image.png" alt="" />
-        </div>
+    <!-- header starts here -->
+    <header class="header-info">
+      <div class="header-content">
+        <h1 class="header-title">The Greatest show on the earth</h1>
+        <p class="header-description">
+          Contrary to popular belief, Lorem Ipsum is not simply random text.It
+          has roots in a piece of classical Latin literature from 45 BC, making
+          it over 2000 years old.
+        </p>
+        <button class="watch-live-btn">
+          <a href="">Watch Live </a>
+          <i class="fa-light fa-greater-than"></i>
+        </button>
+      </div>
+      <div class="header-img">
+        <img src="assets/Banner Image.png" alt="" />
       </div>
     </header>
     <!-- header ends here -->
     <main>
       <div class="container">
         <div class="section-selection">
-          <button id="upcoming-match" class="section-btn">
+          <button class="section-btn">
             <a href="match.html">Upcoming Match</a>
           </button>
-          <button id="all-group" class="section-btn">
+          <button class="section-btn">
             <a href="">All Group</a>
           </button>
-          <button id="blog-btn1" class="section-btn">
+          <button class="section-btn">
             <a href="index.html">Blog</a>
           </button>
         </div>
+        <!-- blog starts here -->
         <div id="blog-btn" class="blogs">
           <article class="blog">
             <div class="thumbnail">
@@ -54,7 +53,7 @@
               <img src="assets/Flag.png" alt="" />
             </div>
             <h3 class="blog-title">Germany Vs France</h3>
-            <span class="blog-info">April 01, 2023, 1.00 AM</span>
+            <p class="blog-info">April 01, 2023, 1.00 AM</p>
           </article>
           <article class="blog">
             <div class="thumbnail">
@@ -63,7 +62,7 @@
               <img src="assets/Flag.png" alt="" />
             </div>
             <h3 class="blog-title">Germany Vs France</h3>
-            <span class="blog-info">April 01, 2023, 1.00 AM</span>
+            <p class="blog-info">April 01, 2023, 1.00 AM</p>
           </article>
           <article class="blog">
             <div class="thumbnail">
@@ -72,7 +71,7 @@
               <img src="assets/Flag.png" alt="" />
             </div>
             <h3 class="blog-title">Germany Vs France</h3>
-            <span class="blog-info">April 01, 2023, 1.00 AM</span>
+            <p class="blog-info">April 01, 2023, 1.00 AM</p>
           </article>
           <article class="blog">
             <div class="thumbnail">
@@ -81,7 +80,7 @@
               <img src="assets/Flag.png" alt="" />
             </div>
             <h3 class="blog-title">Germany Vs France</h3>
-            <span class="blog-info">April 01, 2023, 1.00 AM</span>
+            <p class="blog-info">April 01, 2023, 1.00 AM</p>
           </article>
           <article class="blog">
             <div class="thumbnail">
@@ -90,7 +89,7 @@
               <img src="assets/Flag.png" alt="" />
             </div>
             <h3 class="blog-title">Germany Vs France</h3>
-            <span class="blog-info">April 01, 2023, 1.00 AM</span>
+            <p class="blog-info">April 01, 2023, 1.00 AM</p>
           </article>
           <article class="blog">
             <div class="thumbnail">
@@ -99,36 +98,42 @@
               <img src="assets/Flag.png" alt="" />
             </div>
             <h3 class="blog-title">Germany Vs France</h3>
-            <span class="blog-info">April 01, 2023, 1.00 AM</span>
+            <p class="blog-info">April 01, 2023, 1.00 AM</p>
           </article>
+        </div>
+        <!-- blog ends here -->
+        <div class="view-all-container">
+          <button class="view-all-btn">
+            <a href="">View All</a>
+          </button>
         </div>
       </div>
     </main>
-    <footer>
-      <div id="footers" class="footer-container">
-        <h2 class="footer-title">Goal</h2>
-        <hr />
-        <div class="footer-contents">
-          <a href="" class="footer-content">Contact Us</a>
-          <a href="" class="footer-content">Terms of Service</a>
-          <a href="" class="footer-content">Privacy Policy</a>
-          <a href="" class="footer-content">Privacy Settings</a>
-          <a href="" class="footer-content">Goal App</a>
-          <a href="" class="footer-content">Goal Live</a>
-        </div>
-        <div class="footer-social-links">
-          <a href="https://www.facebook.com/khushba.ahmed/"
-            ><i class="fa-brands fa-facebook fa-7x"></i
-          ></a>
-          <a href="https://www.instagram.com/"
-            ><i class="fa-brands fa-instagram-square"></i
-          ></a>
+    <!-- footer starts here -->
+    <footer id="footers" class="footer-container">
+      <h2 class="footer-title">Goal</h2>
+      <hr />
+      <div class="footer-contents">
+        <a href="" class="footer-content">Contact Us</a>
+        <a href="" class="footer-content">Terms of Service</a>
+        <a href="" class="footer-content">Privacy Policy</a>
+        <a href="" class="footer-content">Privacy Settings</a>
+        <a href="" class="footer-content">Goal App</a>
+        <a href="" class="footer-content">Goal Live</a>
+      </div>
+      <div class="footer-social-links">
+        <a href="https://www.facebook.com/khushba.ahmed/"
+          ><i class="fa-brands fa-facebook fa-7x"></i
+        ></a>
+        <a href="https://www.instagram.com/"
+          ><i class="fa-brands fa-instagram-square"></i
+        ></a>
 
-          <a href="https://www.linkedin.com/in/khushba-ahmed/"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-        </div>
+        <a href="https://www.linkedin.com/in/khushba-ahmed/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
       </div>
     </footer>
+    <!-- footer ends here -->
   </body>
 </html>
